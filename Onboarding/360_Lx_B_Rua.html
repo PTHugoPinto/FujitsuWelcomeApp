@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Basic Page Needs
+    ================================================== -->
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+	<!-- Specific Meta
+    ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<meta name="description" content="Intimate is a One Page Personal & Agency Portfolio Template." />
+	<meta name="keywords" content="HTML5,Design, business, clean" />
+
+	<!-- Titles
+    ================================================== -->
+	<title>Fujitsu Onboarding</title>
+
+	<!-- Favicons
+    ================================================== -->
+	<link rel="shortcut icon" href="assets/images/favicon.png" />
+	<link rel="apple-touch-icon" sizes="72x72" href="assets/images/android-icon-72x72.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="assets/images/apple-icon-144x144.png" />
+
+	<!-- Custom Font
+	================================================== -->
+	<link
+		href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap"
+		rel="stylesheet">
+
+	<!-- CSS
+    ================================================== -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+	<link rel="stylesheet" href="assets/css/simple-scrollbar.css" />
+	<link rel="stylesheet" href="assets/css/odometer-theme-default.css" />
+	<link rel="stylesheet" href="assets/css/fontawesome.all.min.css" />
+
+	<link rel="stylesheet" href="../css/transition.css" />
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+	<link rel="stylesheet" href="./assets/css/360.css" />
+
+	<style>
+		@font-face {
+			src: url(../font/FujitsuSansMedium.ttf);
+			font-family: "FujitsuSansMedium";
+		}
+	</style>
+
+	<!-- This style use for this page -->
+	<link rel="stylesheet" href="assets/css/jquery.animatedheadline.css" />
+
+	<link rel="stylesheet" href="assets/css/style.css" />
+
+	<script src="assets/js/modernizr.min.js"></script>
+
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/aframe/1.2.0/aframe.min.js"></script>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navigation-area">
+	<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+		Start Site Header
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+	<header class="site-header default-header-style sticky">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-12">
+					<div class="navigation-area">
+						<!-- Site Branding -->
+						<div class="site-branding">
+							<a href="index.html">
+								<img src="assets/images/logo/logo.png" alt="Site Logo" />
+							</a>
+						</div><!--  /.site-branding -->
+
+						<!-- Site Navigation -->
+						<div class="site-navigation">
+							<nav class="navigation">
+								<!-- Main Menu -->
+								<div class="menu-wrapper">
+									<div class="menu-content">
+										<ul class="mainmenu">
+											<li>
+												<a class="nav-link" href="./index.html">Home</a>
+											</li>
+											<li>
+												<a class="nav-link" href="./Galeria_360.html">Voltar</a>
+											</li>
+										</ul> <!-- /.menu-list -->
+									</div> <!-- /.hours-content-->
+								</div><!-- /.menu-wrapper -->
+							</nav>
+						</div><!-- /.site-navigation -->
+						<div class="hamburger-menus">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div><!-- /.hamburger-menus -->
+					</div><!-- /.navigation-area -->
+				</div><!-- /.col-12 -->
+			</div><!-- /.row -->
+		</div><!-- /.container-fluid -->
+		<div class="mobile-sidebar-menu sidebar-menu">
+			<!-- 	<div class="overlaybg"></div>-->
+		</div>
+	</header>
+	<!--~~./ end site header ~~-->
+
+
+	<a-scene>
+		<img id="panorama" src="./assets/images/360/360_G.jpeg">
+		<a-sky src="#panorama" rotation="0 -90 0"></a-sky>
+	</a-scene>
+
+	</div>
+	<!--~~./ end site content ~~-->
+
+	<!-- All The JS Files
+			================================================== -->
+	<script src="assets/js/jquery.js"></script>
+	<script src="assets/js/popper.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/plugins.js"></script>
+	<script src="assets/js/imagesloaded.pkgd.min.js"></script>
+	<script src="assets/js/simple-scrollbar.min.js"></script>
+	<script src="assets/js/background-parallax.js"></script>
+	<script src="assets/js/theia-sticky-sidebar.min.js"></script>
+	<script src="assets/js/ResizeSensor.min.js"></script>
+	<script src="assets/js/owl.carousel.min.js"></script>
+	<script src="assets/js/isotope.pkgd.min.js"></script>
+	<script src="assets/js/packery-mode.pkgd.min.js"></script>
+	<script src="assets/js/scrolla.jquery.min.js"></script>
+	<script src="assets/js/odometer.min.js"></script>
+	<script src="assets/js/isInViewport.jquery.js"></script>
+	<script src="assets/js/contact.js"></script>
+	<script src="assets/js/main.js"></script><!-- main-js -->
+
+	<!-- This script use for this page -->
+	<script src="assets/js/heandline.js"></script>
+
+
+	<!-- REQUEST FULL SCREEN MODE -->
+	<script>
+		function getFullscreenElement() {
+			return document.fullscreenElement ||
+				document.webkitfullscreenElement ||
+				document.mozfullscreenElement ||
+				document.msfullscreenElement;
+		}
+
+		function toggleFullscreen() {
+			if (getFullscreenElement()) {
+				document.exitFullscreen();
+			} else {
+				document.documentElement.requestFullscreen().catch(console.log);
+			}
+		}
+
+		document.addEventListener("dblclick", () => {
+			toggleFullscreen();
+		});
+
+		document.addEventListener("fullscreenchange", () => {
+			console.log("full Screen Changed !")
+		})
+	</script>
+
+
+
+	<script>
+		var acc = document.getElementsByClassName("accordion");
+		var i;
+
+		for (i = 0; i < acc.length; i++) {
+			acc[i].addEventListener("click", function () {
+				this.classList.toggle("active");
+				var panel = this.nextElementSibling;
+				if (panel.style.maxHeight) {
+					panel.style.maxHeight = null;
+				} else {
+					panel.style.maxHeight = panel.scrollHeight + "px";
+				}
+			});
+		}
+	</script>
+
+
+
+
+</body>
+
+</html>

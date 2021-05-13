@@ -143,6 +143,14 @@
 								<li>Shaping tomorrow with you</li>
 							</ul>
 							<a href="#service-block" class="btn btn-primary">ajuda</a>
+							<div id="overlay_msg" onclick="off()">
+								<div id="text_msg">Overlay Text</div>
+							</div>
+
+							<div>
+								<h2>Overlay with Text</h2>
+								<button class="btn btn-primary" style="margin-top: -33px;" onclick="on()">Leia</button>
+							</div>
 
 						</div><!-- /.hero-content-area -->
 					</div>
@@ -959,7 +967,15 @@
 			console.log("full Screen Changed !")
 		})
 	</script>
+	<script>
+		function on() {
+			document.getElementById("overlay_msg").style.display = "block";
+		}
 
+		function off() {
+			document.getElementById("overlay_msg").style.display = "none";
+		}
+	</script>
 
 
 </body>

@@ -9761,17 +9761,30 @@ a:active {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.774);
+  background-color: rgba(0, 0, 0, 0.9);
   z-index: 1000;
   cursor: pointer;
 }
 
 #text_msg {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
-  font-size: 50px;
+  font-size: 2vw;
   color: white;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
+  width: 90%;
+}
+
+@media (max-width: 768px) {
+  #text_msg {
+    font-size: 5vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .text_msg_corp {
+    font-size: 4vw;
+  }
 }
